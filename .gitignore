@@ -1,0 +1,9 @@
+*.retry
+*.log
+.env
+.env.*
+secrets.yml
+vault.yml
+*.pem
+*.key
+.ssh/
