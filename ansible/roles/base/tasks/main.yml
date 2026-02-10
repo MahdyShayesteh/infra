@@ -1,0 +1,8 @@
+- name: Install base packages
+  apt:
+    name:
+      - vim
+      - curl
+      - git
+      - htop
+    state: present
