@@ -1,0 +1,12 @@
+- name: Create bootstrap user
+  user:
+    name: "{{ bootstrap_user }}"
+    group: sudo
+    append: yes
+    shell: /bin/bash
+    create_home: yes
+
+- name: Add ssh key
+  authorized_key:
+  user: "{{ bootstrap_user }}"
+  key: "{{ bootstrap_ssh_public_key }}"

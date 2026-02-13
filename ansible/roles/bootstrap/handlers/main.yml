@@ -1,0 +1,6 @@
+---
+# handlers file for roles/bootstrap
+- name: Restart SSH
+  ansible.builtin.service:
+    name: SSH
+    state: restarted
